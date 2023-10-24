@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+    <title>Hide/Show</title>
+</head>
+<body>
+    <div class="w3-container w3-red">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem distinctio accusamus consequuntur molestiae odit, voluptate nihil nobis repellendus esse cumque, enim, aperiam tempore quas voluptatem alias ipsa laborum ab officiis? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat voluptas nam eligendi sint, earum vel corporis voluptates placeat? Saepe aut eveniet odio provident? Consequuntur laborum voluptatum rerum nam earum placeat.
+    </div>
+    <button id="hide" class="w3-block w3-margin w3-gray">Hide</button>
+    <button id="Show" class="w3-block w3-margin w3-gray">Show</button>
+    <button id="toggle" class="w3-block w3-margin w3-gray">Hide/Show</button>
+</body>
+</html>
+
+<script src="jquery-3.6.3.min.js"></script>
+
+<script>
+$(function(){
+
+        $('#hide').click(function(){
+            $('.w3-red').hide(1000);
+            $(this).hide(1000);
+            $('#Show').hide(1000);
+        });
+
+        $('#Show').click(function(){
+            $('.w3-red').show(1000);
+            $(this).hide(1000);
+            $('#hide').show(1000);
+        });
+
+        $('#toggle').click(function(){
+            $('.w3-red').toggle(1000);
+        });
+})
+</script>

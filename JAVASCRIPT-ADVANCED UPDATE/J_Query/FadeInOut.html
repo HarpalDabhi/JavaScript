@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .hide{
+            display: none;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+    <title>Fade in out</title>
+</head>
+<body>
+    <button class="w3-btn w3-block w3-orange w3-margin" id="fade_in">Fade In</button>
+    <button class="w3-btn w3-block w3-teal w3-margin" id="fade_out">Fade Out</button>
+    <button class="w3-btn w3-block w3-deep-orange w3-margin" id="fade_toggle">Fade Toggle</button>
+    <button class="w3-btn w3-block w3-teal w3-margin" id="slide_down">Slide Down</button>
+    <button class="w3-btn w3-block w3-teal w3-margin" id="slide_up">Slide Up</button>
+    <button class="w3-btn w3-block w3-teal w3-margin" id="slide_toggle">Slide Toggle</button>
+    <button class="button">Fade On</button>
+    
+    <div class="w3-container w3-red w3-margin w3-padding w3-xxlarge hide" id="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ipsam amet quod placeat corrupti. Consectetur quisquam atque vel in inventore, saepe dolorum soluta suscipit molestias, illo numquam harum architecto praesentium.
+    </div>
+</body>
+</html>
+<script src="jquery-3.6.3.min.js"></script>
+
+<script>
+    $(function(){
+        $("#fade_in").click(function(){
+            $("#para").fadeIn(2000);
+            console.log("Faced in")
+        });
+
+        $("#fade_out").click(function(){
+            $("#para").fadeOut(2000);
+            console.log("Faced out")
+        });
+        
+        $("#fade_toggle").click(function(){
+            $("#para").fadeToggle(2000);
+            console.log("Faced toggle")
+        });
+
+        $('.button').click(function(){
+            $('#para').fadeTo(2000,0.7)
+            console.log("fade on")
+        })
+    })
+</script>
+
+<script>
+    $(document).ready(function(){
+
+        $("#slide_down").click(function(){
+            $("#para").slideDown(1800);
+        });
+
+        $("#slide_up").click(function(){
+            $("#para").slideUp(1800);
+        });
+
+        $("#slide_toggle").click(function(){
+            $("#para").slideToggle(1800);
+        });
+
+    })
+</script>

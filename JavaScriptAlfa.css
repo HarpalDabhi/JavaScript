@@ -1,0 +1,56 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    
+    
+}
+body{
+    width: 100%;
+}
+
+header{
+    display: flex;
+    font-family: monospace;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: rosybrown;
+}
+ul{
+    display: flex;
+
+}
+li{
+    list-style: none;
+}
+img{
+    width: 100px;
+}
+a{
+    font-size: 1.4rem;
+    padding: 0.5rem 1.2rem;
+    text-decoration: none;
+    color: red;
+}
+
+
+.bg-red{
+    background-color: red;
+    color: white;
+}
+
+.f-verdana{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.4rem;
+}
+
+.f-big{
+    font-size: 2rem;
+}
+
+.p-big{
+    padding: 1rem;
+}
+.m-big{
+    margin: 1rem;
+}

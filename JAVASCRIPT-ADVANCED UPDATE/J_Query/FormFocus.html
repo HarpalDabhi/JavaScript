@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+    <title>Focus</title>
+</head>
+<body>
+    <form class="w3-container w3-card-4 w3-red w3-margin w3-padding ">
+      
+        <p><label>First Name</label>
+        <input class="w3-input w3-border" name="first" type="text"></p>
+      
+        <p><label>Last Name</label>
+        <input class="w3-input w3-border" name="last" type="text"></p>
+
+        <input class="w3-check" type="checkbox" checked="checked">
+        <label>Milk</label>
+        
+        <input class="w3-check" type="checkbox">
+        <label>Sugar</label>
+        
+        <input class="w3-check" type="checkbox" >
+        <label>Lemon </label> 
+
+        <button class="w3-btn w3-block w3-teal w3-margin">Button</button>
+      </form>
+</body>
+<script src="jquery-3.6.3.min.js"></script>
+</html>
+
+<script>
+
+    $(function(){
+        $('.w3-check').change(function(){
+            $(this).css("color","blue");
+            console.log('changed')
+        })
+
+        $('.w3-input').focus(function(){
+            $(this).css("padding","20px")
+            console.warn('focused');
+        })
+        $('.w3-input').blur(function(){
+            $(this).css("padding","5px")
+            console.info('blured');
+        })
+
+        $('label').click(function(){
+            $(this).hide();
+        })
+
+        $('.w3-btn').mouseenter(function(){
+            $('body').css('background-color','red')
+            console.log('mouseenter')
+        })
+        $('.w3-btn').mouseleave(function(){
+            $('body').css('background-color','blue')
+            console.log('mouseenter')
+        })
+        $('.w3-btn').click(function(){
+            $('body').css('background-color','blue')
+            console.log('Submited')
+        })
+    })
+</script>

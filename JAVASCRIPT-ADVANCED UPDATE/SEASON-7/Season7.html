@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Fill Your Details Below</h1>
+    <div class="container">
+        <div class="form">
+            <form action="" method="post">
+            <input type="text" placeholder="Enter Your Name" name="name" id="inputName">
+
+            <input type="text" placeholder="Enter Your Surname" name="surname">
+
+            <input type="file" name="file" id="file">
+
+            <input type="number" name="number" id="number" placeholder="Enter Your Mo.No.">
+
+            <input type="email" name="email" id="email" placeholder="Enter Your Email">
+
+            <input type="password" name="password" id="password" placeholder="Enter Your Password">
+            <!-- This is Submit button -->
+            <button type="submit" id="submit">Submit</button>
+            <!-- this is Reset Buton -->
+            <button type="reset" id="reset">Cancel</button>
+        </form>
+        </div>
+    </div>
+    <h2 id="h2" class="h2head"> <b>bold</b> i love you</h2>
+    <ul>
+        <li class="listItem liitem" id="home">Home</li>
+        <li class="listItem info" id="about">About</li>
+        <li class="listItem contaction" id="contact">Contact</li>
+        <li class="listItem" id="help">Help</li>
+        <li class="listItem features" id="services">Services</li>
+        <li class="listItem" id="feedback">Feedback</li>
+    </ul>
+    <section>
+      <div class="box" id="firstbox">i am Box</div>
+      <div class="box"id="sbox">i am Box</div>
+      <div class="box" id="tbox">i am Box</div>
+      <div class="box">i am Box</div>
+      <div class="box">i am Box</div>
+    </section>
+</body>
+<style>
+    body{
+        background-color: black;
+    }
+    *{
+        margin: 0%;
+        padding: 0%;
+    }
+    h1{
+        font-size: 2.5rem;
+        color: aqua;
+        text-align: center;
+        padding: 1rem;
+    }
+    h2{
+        font-size: 2.5rem;
+        color: aqua;
+        text-align: center;
+        padding: 1rem;
+    }
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(9, 48, 35, 0.233);
+        height: 85vh;
+    }
+    .form{
+border: 1px outset gray;
+box-shadow: 1px 1px 19px 1px rgb(89, 88, 88);
+padding: 2rem 1rem;
+border-radius: 10px;       
+    }
+   
+    input{
+        font-size: 1.3rem;
+        display: block;
+        padding: 3px 20px;
+        margin: 10px 40px;
+        width: 400px;
+        background-color: transparent;
+        border: none;
+        border-bottom: 2px solid rgb(58, 57, 57);
+        color: white;
+        }
+    #submit{
+        font-size: 1.3rem;
+        display: block;
+        padding: 3px 20px;
+        margin: 10px 40px;
+        width: 400px;
+        background-color: red;
+        border: none;
+        border-radius: 4px;
+        }
+    #reset{
+        font-size: 1.3rem;
+        display: block;
+        padding: 3px 20px;
+        margin: 10px 40px;
+        width: 400px;
+        }
+</style>
+<!-- <script src="31.WalkingTheDoc.js"></script> -->
+<!-- <script src="32.AccesingChildrenElement.js"></script> -->
+<!-- <script src="33.ParentsAndSibling.js"></script> -->
+<!-- <script src="34.ElementNavigation.js"></script> -->
+<script src="36.SearchDom.js"></script>
+<!-- <script src="37.MatchCloseContain.js"></script> -->
+</html>

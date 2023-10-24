@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .art{
+            border: 1px solid gainsboro;
+            box-shadow: 1px 1px 10px 1px black;
+            margin: 1rem;
+            padding: 1rem;  
+        }
+        .art big{
+            color: red;
+            text-decoration: underline;
+        }
+        .adj{
+            border: 1px solid black;
+            margin: 1rem;
+            padding: 1rem;
+            background-color: rgb(77, 212, 250);
+        }
+        #sdiv{
+            border: 1px solid black;
+            margin: 1rem;
+            padding: 1rem;
+            background-color: rgb(250, 77, 77);
+        }
+        #pdiv{
+            border: 2px solid green;
+            background-color: yellow;
+            margin: 1rem;
+            padding: 1rem;
+            font-size: 1.4rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .b-red{
+            background-color: rgb(250, 77, 77);
+        }
+        .t-font{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1.4rem;
+        }
+        .t-white{
+            color: white;
+            padding: 1rem;
+            margin: 1rem;
+        }
+        
+        *{
+            margin: 0%;padding: 0%;
+        }
+        table{
+            border: 1px solid black;
+            padding: 0.2rem;
+            width: 100%;
+            border-spacing: 0px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        td{
+            border: 1px solid black;
+            padding: 1rem;
+            text-align: center;
+            margin: 0%;
+        }
+        tr{
+            margin: 0px;
+            padding: 0px;
+        }
+     tbody tr:nth-child(2n+2){
+            background-color: rgb(228, 226, 226);
+        }
+     tbody tr:nth-child(2n+1){
+            background-color: ghostwhite;
+        }
+        thead{
+            background-color: rgb(6, 147, 212);
+            font-size: 1.6rem;
+            font-weight: bold;
+        }
+      .t-black{
+        color: black;
+        background-color: wheat;
+      }
+   
+    </style>
+    <title>JavaScript</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <td>Sr.No.</td>
+                <td>Name</td>
+                <td>Surname</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Harpal</td>
+                <td>Dabhi</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Vijay</td>
+                <td>Dabhi</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Kiran</td>
+                <td>Dabhi</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Kiran</td>
+                <td>Dabhi</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Kiran</td>
+                <td>Dabhi</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Kiran</td>
+                <td>Dabhi</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="container">
+        <h1 id="h1">Harpal is the Great Headers of the new techniques</h1>
+        <p class="para">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum assumenda, facilis tempora veritatis sapiente sed ipsum animi ad, aspernatur, beatae in numquam ducimus doloribus id non deserunt repellat expedita architecto.
+        </p>
+        <p class="para">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum assumenda, facilis tempora veritatis sapiente sed ipsum animi ad, aspernatur, beatae in numquam ducimus doloribus id non deserunt repellat expedita architecto.
+        </p>
+
+        <p class="para">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum assumenda, facilis tempora veritatis sapiente sed ipsum animi ad, aspernatur, beatae in numquam ducimus doloribus id non deserunt repellat expedita architecto.
+        </p>
+    </div>
+    <main>
+        <div class="c1" id="i1">
+            <div id="A" class="na">Id A</div>
+            <div id="B">Id B</div>
+            <div id="C">Id C</div>
+        </div>
+        <div class="c2" id="i2">
+            <div id="a">Id a</div>
+            <div id="b">Id b</div>
+            <div id="c">Id c</div>
+        </div>
+    </main>
+    <section>
+        <p class="b-red t-font t-white">
+            <h2 id="h2">This is Heading two with heading</h2>
+        </p>
+        <p class="b-red t-font t-white">
+            <h2 id="h22" class="t-font" hidden title="Head-1" data-harpal="player" data-game="chess">This is Heading two with heading</h2>
+            <p class="t-font b-red" title="Pragraph-1" id="hpara">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore quas sapiente unde consequatur nihil consectetur dignissimos harum quia aspernatur itaque. Explicabo exercitationem ab amet. Ab cupiditate consectetur vero iure hic.</p>
+        </p>
+    </section>
+    <article>
+        <div id="sdiv">
+            <p id="pdiv">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita adipisci veniam odio perspiciatis, quam fugit repudiandae incidunt atque ex, nemo rerum voluptatem? Accusantium facilis obcaecati iusto magnam cupiditate voluptatibus placeat?</p>
+        </div>
+    </article>
+    <article class="art">
+        <p class="adj" id="ptag">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores neque modi, optio odit, fugiat officiis laborum excepturi dolorum ab, recusandae molestias quidem provident delectus asperiores? Optio adipisci ut quibusdam. Quis?
+        </p>
+    </article>
+    <div style="display: flex; align-items: center; justify-content: center; padding: 1rem; margin: 1rem;">
+    <button style="font-size: 1.2rem; padding: 0.8rem 2.2rem;"  id="btn">Click Me !!!</button></div>
+  
+</body>
+</html>
+<!-- <script src="1_IntroSetup.js"></script> -->
+<!-- <script src="22_Guess_Number.js"></script> -->
+<!-- <script src="27_AlertPromtConfirm.js"></script> -->
+<!-- <script src="28_Dom_Bom.js"></script> -->
+<!-- <script src="29_PracticeSet3.js"></script> -->
+<!-- <script src="31_WallkingOnDom.js"></script> -->
+<!-- <script src="35_TableElements.js"></script> -->
+<!-- <script src="36_Searching_DOM.js"></script> -->
+<!-- <script src="37_MathcCloseContain.js"></script> -->
+<!-- <script src="41_innerHTML_outer.js"></script> -->
+<!-- <script src="42_AtributesMethod.js"></script> -->
+<!-- <script src="43_AppendAtNode.js"></script> -->
+<!-- <script src="44_AdjacentHTML.js"></script> -->
+<!-- <script src="45_ClassNameList.js"></script> -->
+<!-- <script src="46_SetTimeOutInterval.js"></script> -->
+<!-- <script src="47_EventById.js"></script> -->
+<!-- <script src="48_MoreEventListener.js"></script> -->
+<!-- <script src="49_PracticeSetEvent.js"></script> -->
+<!-- <script src="52_Callbacks.js"></script> -->
+<!-- <script src="53_CallbackHell.js"></script> -->
+<!-- <script src="55_ThenCatch.js"></script> -->
+<!-- <script src="56_PromiseChain.js"></script> -->
+<!-- <script src="57_Multiple_Handler.js"></script> -->
+<!-- <script src="58_Promise_API.js"></script> -->
+
+<script src="75_OopsPrototype.js"></script>

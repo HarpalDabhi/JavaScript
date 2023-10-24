@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #form{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        input,textarea{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            display: block;
+            margin: 1.9rem;
+            font-size: 1.1rem;
+            padding: 14px 50px;
+        }
+        form{
+            margin: 3rem;
+            background-color: aquamarine;
+            
+        }
+        #pgraph{
+            font-size: 2rem;
+            border: 3px solid black;
+            margin: 2rem;
+            padding: 1rem;
+            color: blue;
+            background-color: aquamarine;
+        }
+    </style>
+    <title>Season-4</title>
+</head>
+<body>
+    <div id="form">
+        <form action="noaction" method="get">
+            <input type="text" placeholder="Enter Your Old Word" id="OldWord">
+            <input type="text" placeholder="Enter Your New Word" id="NewWord">
+            
+        </form>
+    </div>
+    <div id="para"></div>
+    <div id="pgraph">
+       Mera Name Chatur hai  aur Me aaj Apako hamare College University Ke Bahot Hi Mahan Jese Creativity Ke Bare me Bataunga. Yaha K Logo Ne Chamatkar pe Chamatkar ke hai aur Asha hai ke aje jage bhi bahot Chamatkar karenge. Esha Chamatkar to Keval Hamari College Vale HI Kar Sakte Hai. Ya ha Bade Mahan Sahab Ne Vo Chiz di Jo hoti to Sabke pas lekin Deta koi nahi . Unhone Hamko Dhan Dekar Hamari Bahot Help Ki Hai . 
+    </div>
+</body>
+<script>
+    let p=document.getElementById("pgraph");
+    console.log(p);
+
+    let NewWord=document.getElementById("NewWord");
+    console.log(NewWord);
+
+    let OldWord=document.getElementById("OldWord");
+    console.log(OldWord);
+    
+    let b=NewWord.value;
+    console.log(b)
+
+    let a=OldWord.value
+    console.log(a);
+
+    let par=p.innerText
+
+    NewWord.addEventListener('input',func1);
+    let x;
+    function func1(){
+         x=par.replace(a,b);
+         console.log(x);
+        }
+        p.innerText=x
+
+</script>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+</head>
+<body>
+
+<button>Start Animation</button>
+
+<section class="container">
+<div class="box" >Catch Me.</div>
+</section>
+
+</body>
+</html>
+
+<style>
+    .container{
+        border: 3px solid black;
+        padding: 2rem;
+    }
+    .box{
+        border: 1px solid black;
+        background-color: red;
+        padding: 1rem;
+        display: inline-block;;
+
+    }
+</style>
+
+<script src="jquery-3.6.3.min.js"></script>
+
+<script> 
+    $(document).ready(function(){
+      $(".box").hover(function(){
+        console.log("Hover")
+        $(".box").animate({left: '800px'});
+        $(".box").animate({left: '00px'});
+      });
+       $(".box").click(function(){
+       alert("Stop")
+      });
+    });
+    </script> 

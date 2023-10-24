@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter-9</title>
+</head>
+<style>
+    h1{
+        background-color: rgb(214, 243, 249);
+    }
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        /* background-image: url('sky.jpg'); */
+        background-color: black
+    }
+    #digital{
+        font-size: 4rem;
+        color: gray;
+        font-weight: bold;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        /* border: 5px outset black; */
+        border-radius: 15rem;
+        height: 30rem;
+        width: 30rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        box-shadow: 5px 5px 70px 5px white;
+    }
+    #digital:hover{
+        cursor: pointer;
+        box-shadow: 5px 5px 70px 15px white;
+   background-color: white;
+   
+    }
+    
+    *{
+        margin: 0%;padding: 0%;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="clock" id="digital" onclick="day()"></div>
+    </div>
+</body>
+<script src="51.CreateClock.js"></script>
+<!-- <script src="52.CallbackHell.js"></script> -->
+<!-- <script src="54.Promises.js"></script> -->
+<!-- <script src="55.PromiseThenCatch.js"></script> -->
+<!-- <script src="56.PromisesChanin.js"></script> -->
+<!-- <script src="57.PromiseMultihandler.js"></script> -->
+<!-- <script src="58.Promise_API.js"></script> -->
+<!-- <script src="59.AsyncAwait.js"></script> -->
+<!-- <script src="60.TryCatch.js"></script> -->
+<script src="61.ErrorObject.js"></script>
+</html>
